@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Parakram 14</title>
+	<meta name="Resource-type" content="Document" />
+    <meta name="author" content="M&P-JYC" />
+    <meta name="description" content="Parakram 14 JUIT Sports fest website." />
+    <meta name="keywords"  content="JUIT,Parakram,JYC,Parakram 14,Parakram 2014, JUIT Sports Fest" />
+
+
+	<link rel="stylesheet" type="text/css" href="full/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link href="sports_icons/flaticon.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+	<link rel="stylesheet" type="text/css" href="css/event.css">
+	 <script src="js/snap.svg-min.js"></script>
+	 <script src="js/hovers.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+	<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+		
+	
+	<style>
+    @font-face{
+        font-family: cafe;
+        src:url('font/CaviarDreams.eot');
+        src: local(my_custom_font), url('font/CaviarDreams.ttf')
+        format('opentype');
+    }
+    @font-face{
+        font-family: hexter;
+        src:url('font/hexter.eot');
+        src: local(my_custom_font), url('font/hexter.ttf')
+        format('opentype');
+    }
+	.container {
+		height: 78%;
+		width: 80%;
+		margin: auto;
+		margin-top:8%;
+		position: relative;
+	}
+	.tile {
+		margin: auto;
+		color: #000;
+		position: relative;
+		display: inline-block;
+		width: 48%;
+		height: 48%;
+		float: left;
+		margin-left:1%;
+		margin-bottom:1%;
+	}
+	.tile img {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		margin:0;
+	}
+	
+	
+	.overlay {
+		position:absolute;
+		top:0px;
+		left:0px;
+		height:100%;
+		width:100%;
+		opacity:1;
+		background:rgba(0,0,0,0.5);
+		z-index:10;
+		transition: opacity 0.5s ease-out;
+		-webkit-transition: opacity 0.5s ease-out;
+		-moz-transition: opacity 0.5s ease-out;
+		-o-transition: opacity 0.5s ease-out;
+	}
+	
+
+	
+	.overlay:hover {
+		opacity:0;
+	}
+	
+	.see{
+	opacity:1;
+	}
+	.dontsee{
+	opacity:0.5;
+	}
+	
+	.opa{color: transparent !important;text-shadow:0px 0px 5px #fff;}
+	.noopa{color:#fff !important;text-shadow:none;}
+	
+
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 72%;
+			margin: 0 auto;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+		
+		
+		
+
+	#section1, #section4, #section6
+	{       background-image: url(imgs/bg5.jpg);
+        background-size: contain;
+            padding: 0% 0 0 0;
+	}
+
+    #section2,
+  #section5{
+        background-image: url(imgs/bg6.jpg);
+        padding: 0% 0 0 0;
+        background-size: contain;
+    }
+
+    #section3{
+        background-image: url(imgs/bg7.jpg);
+        padding: 0% 0 0 0;
+    }
+	
+
+		/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/bg4.jpg);
+        background-size: contain;
+	}
+
+	#section3 h1{
+		color: #000;
+	}
+	
+	#menu ul{
+	text-align:right;
+	}
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/bg7.jpg);
+        background-size: contain;
+	}
+	#slide2{
+		background-image: url(imgs/bg8.jpg);
+        background-size: contain;
+	}
+	#slide3{
+		background-image: url(imgs/bg9.jpg);
+        background-size: contain;
+	}
+	#slide4{
+		background-image: url(imgs/bg5.jpg);
+        background-size: contain;
+	}
+	.black_rot{
+	width: 120%;
+
+	/*background-color:rgba(0,0,0,1);
+        background-image:url( imgs/head_texture.jpg);*/
+	height: 100px;
+	top: 0px;
+	left: -10%;
+	position: absolute;
+	z-index: 90;
+	/*-webkit-transform: rotate(-2.5deg);
+	-ms-transform: rotate(-2.5deg);
+	-moz-transform: rotate(-2.5deg);
+	-o-transform: rotate(-2.5deg);
+	transform: rotate(-2.5deg);*/
+	}	
+	
+	
+	#footer {
+    position: fixed;
+	bottom:0px;
+    height: 16px;
+    display: block;
+    width: 100%;
+    background: none repeat scroll 0% 0% #000;
+    z-index: 9;
+    text-align: center;
+    color: #000;
+    padding: 5px 0px 0px;
+	}
+	
+	.caps{
+	font-family:hexter;
+	font-size:18px;
+     margin-top: 0px;
+        display: inline;
+	}
+	/*Vertical Navigation Styling*/
+       nav{
+           position: absolute;
+           top:40%;
+           z-index: 101;
+
+       }
+        ul
+        {
+            margin:0px;
+            padding:0px;
+            list-style-type:none;
+            -webkit-backface-visibility: hidden; backface-visibility: hidden;
+        }
+        .var_nav
+        {
+            position:relative;
+
+            width:70px;
+            height:82px;
+            margin-bottom:0px;
+        }
+
+        .link_bg i
+        {
+            position:relative;
+        }
+        .link_title
+        {
+            position:absolute;
+            width:100%;
+            z-index:3;
+
+            background-size: cover
+        }
+        .link_title:hover .icon
+        {
+            -webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            -ms-transform:rotate(360deg);
+            transform:rotate(360deg);
+        }
+
+
+        .icon
+        {
+            position:relative;
+            width:70px;
+            height:70px;
+            -webkit-transition:all .5s ease-in-out;
+            -moz-transition:all .5s ease-in-out;
+            -o-transition:all .5s ease-in-out;
+            -ms-transition:all .5s ease-in-out;
+            float:left;
+            transition:all .5s ease-in-out;
+            float:left;
+
+        }
+        .icon i{top:20px;
+            left: 0px;
+            position:relative;}
+        a {
+
+            color:#fff;
+            text-decoration:none;
+
+        }
+        a:link{
+
+            color: white;
+            text-decoration:none;
+
+        }
+        a:visited{
+
+            color: white;
+            text-decoration:none;
+
+        }
+
+        a:hover{
+
+            color: white;
+            text-decoration:none;
+
+        }
+        a:active{
+
+            color: white;
+            text-decoration:none;
+
+        }
+		.evehead{
+		font-family: Furmanite;
+		color:white;
+		font-size:50px;
+		position:absolute;
+		top:25%;
+		left:25%;
+		}
+		
+        span
+        {
+
+            display:block;
+            margin-top:25px;
+        }
+
+        .reg{
+            position: fixed;
+            top: 40%;
+            right: 0%;
+            z-index: 999;
+        }
+        @media screen and (max-width: 1920px) and (min-width:1368px){
+            nav{
+                zoom:1.5;
+            }
+        }
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script>
+	$(document).ready(
+	function(){
+		$('.a').mouseover(function(){
+		$('.a').addClass('opa').removeClass('noopa');
+		$(this).addClass('noopa').removeClass('opa');});
+		$('.a').mouseout(function(){
+		$('.a').addClass('noopa').removeClass('opa');
+		});
+		}
+
+		);	
+	</script>
+	<script type="text/javascript" src="full/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				<!--sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],-->
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage','6thpage','7thpage', 'lastPage'],
+				menu: '#menu'
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+<a class="reg" href="parakram/parakram.html" target="_blank"><img src="imgs/register.png" style="height:200px; width:auto;"></a>
+
+<div id="menu">
+<div class="black_rot"></div>
+<h1 style="position:relative;z-index:90;display:inline;"> <img src="imgs/logo.png"> </h1>
+<ul id="menu" style="z-index:99; zoom: 1.3;">
+	<li data-menuanchor="firstPage"><a class="noopa a" href="#firstPage">HOME</a></li>
+	<li data-menuanchor="secondPage"><a class="noopa a" href="#secondPage">ABOUT US</a></li>
+	<li data-menuanchor="3rdPage"><a class="noopa a" href="#3rdPage">EVENTS</a></li>
+	
+	<li data-menuanchor="4thpage"><a class="noopa a" href="#4thpage">GALLERY</a></li>
+	<li data-menuanchor="5thpage"><a class="noopa a" href="#5thpage">SPONSORS</a></li>
+	<li data-menuanchor="6thpage"><a class="noopa a" href="#6thpage">CONTACT US</a></li>
+</ul>
+</div>
+<nav>
+    <UL>
+        <li class="var_nav"><a href="#3rdPage/1">
+            <div class="link_title" style="background-image:url('Shapes/1.png'); height:95%;width:95%;" >
+                <div class=icon style="top: 5px;" >
+                    <i class="flaticon-basket"></i>
+                </div>
+                <!--<a href="#"><span>About Us</span></a>-->
+            </div></a>
+        </li>
+        <li class="var_nav"><a href="#3rdPage/2">
+
+            <div class="link_title" style="background-image:url('Shapes/2.png'); height: 95%;width: 95%; margin-top: -5px;"" >
+            <div class=icon>
+                <i class="flaticon-racket"></i>
+            </div>
+            <!--<a href="#"><span>Ideas</span></a>-->
+            </div></a>
+        </li>
+        <li class="var_nav"><a href="#3rdPage/3">
+
+            <div class="link_title" style="background-image:url('Shapes/3.png'); height: 95%;width: 95%; margin-top: -19px;" >
+                <div class=icon style="top: 5px;">
+                    <i class="flaticon-sportive2"></i>
+                </div>
+                <!--<a href="#"><span>Services</span></a>-->
+            </div></a>
+        </li>
+		
+        <li class="var_nav" ><a href="#3rdPage/4">
+            <div class="link_title" style="background-image:url('Shapes/4.png'); height: 95%;width: 95%; margin-top: -17px;"" >
+            <div class=icon>
+                <i class="flaticon-sports11"></i>
+            </div>
+            <!--<a href="#"><span>Marketing</span></a>-->
+            </div></a>
+        </li>
+
+
+        
+		
+    </UL>
+</nav>
+
+<div id="fullpage">
+
+	<div class="section " id="section0">
+	 <div class="intro" style="position:absolute;top:22%;left:20%;">
+			<img src="imgs/logo1.png" style="width:800px;height:auto;"/ >
+		</div>
+		<!--<iframe src="shower/index.html" style="border: none;width: 100%; height: 100%;">
+       </iframe>-->
+	</div>
+	
+	<div class="section " id="section1">
+	
+		<div class="intro" style="padding-top:5%;zoom:80%">
+           <!-- <h1 style="font-family:'hexter';color: black;">About us</h1>-->
+		
+			<p style="font-size:100%;color:#000;background-repeat:repeat;background-size:cover;text-align:left;padding:5px 15px;padding-top:10%;position:relative;font-family: 'Cafe';font-weight:bolder;text-shadow:5px 5px 5px rgb(174,170,170);line-height:35px;font-size: 18px;"><img src="imgs/kobedunk2.png" style="height:500px;width:auto;position:relative;float:right;top:-90px;">In this era of computerization and globalization where our lives have become so stressful, sports and
+
+games have not just become a getaway for recreation, but they have also imparted values like discipline, 
+
+responsibility, self-confidence, sacrifice and accountability. This is exactly what the <span class="caps">PARAKRAM</span> aims to
+
+leave behind for each and every one in <span class="caps">JUIT</span>, Waknaghat.<br/>
+
+Sponsored by sports giants like <span class="caps">NIVIA, PARAKRAM</span> the open sports festival will be held in one of the 
+
+most beautiful campuses one could ever imagine-<span class="caps">JUIT</span>, situated in the state of mighty Himalayas, 
+
+Himachal Pradesh. On November 2014, the university will once again open its gates for thousands 
+
+of participants from esteemed institutes. The major events being, <span class="caps">VOLLEYBALL, BASKETBALL, 
+
+BADMINTON & TABLE TENNIS</span>, the spectators will rise on their toes and unanimously cheer the spirit of 
+
+sports and athleticism.</br>
+
+ We invite you to be a witness of this momentous sports festival and live up to the glory of sports.
+
+With zeal in our hearts, we open up a doorstep for future glories to come.</p>
+		</div>
+	</div>
+	
+	<div class="section" id="section2">
+
+	    <div class="slide" id="slide1">
+
+            <div class="container3" style="text-shadow:1px 1px 23px white">
+
+                <section id="grid" class="grid clearfix">
+                    <a href="#3rdPage/1" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure style="font-family:hexter;">
+                            <img src="imgs/1.jpg" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <h2>Basket Ball</h2>
+                               
+
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#3rdPage/2" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure style="font-family:hexter;">
+                            <img src="imgs/2.jpg" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <h2>Table Tennis</h2>
+                                
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#3rdPage/3" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure style="font-family:hexter;">
+                            <img src="imgs/3.jpg" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <h2>Volley Ball</h2>
+                                
+
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#3rdPage/4" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                        <figure style="font-family:hexter;">
+                            <img src="imgs/4.jpg" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                            <figcaption>
+                                <h2>Badminton</h2>
+                                
+
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                </section>
+</div>
+            </div>
+	    <div class="slide" id="slide2">
+
+		<div class="intro" style="zoom:80%">
+			<h1 style="font-family:'hexter';color: black;font-weight:bold;font-size:45px;">Basket Ball</h1>
+			<p style="font-size:100%;color:#000;background-repeat:repeat;background-size:cover;text-align:left;padding:15px;position:relative;font-family: 'Cafe';font-weight:bold;font-weight:strong;line-height:35px;font-size: 16px;"><b>Both boys and girls team. Each team shall consist of:</b> <br/>
+				1. No more than twelve (12) team members entitled to play, including a captain. <br/>
+				2. A coach and, if a team wishes, an assistant coach. <br/>
+				3. A maximum of three (3) team followers who may sit on the team bench and have special responsibilities, e.g. manager, doctor, physiotherapist, statistician, interpreter, etc. <br/>
+				4. FIBA rules applicable. <br/>
+				5. 10 minutes each quarter with 2 minute break between the quarters and 5 minutes at half time (unless otherwise stated). <br/>
+				6. Teams should report to the basket ball court half an hour before their match. All the players of the team should have same colour of jersey with printed numbers. Use of abusive or foul language during the play can lead to technical fouls or expulsion depending on the referee and the organizing committee. <br/>
+				7. The decision given by the match official will be considered as the final decision.<br/>
+</p>
+		</div>
+		</div>
+
+		
+		<div class="slide" id="slide3">
+		<div class="intro" style="zoom:80%">
+			<h1 style="font-family:'hexter';color: black;font-weight:bold;font-size:45px;">Table Tennis</h1>
+			<p style="font-size:100%;font-size: 16px;color:#171716;background-repeat:repeat;background-size:cover;text-align:left;padding:15px;position:relative;font-family: 'Cafe';font-weight:bold;font-weight:strong;line-height:35px;">
+			1. Team Size: 4 players There will be 3-single games per match. <br/>
+			  a. A vs X <br/>
+			  b. B vs Y <br/>
+			  c. C vs Z <br/>
+			2. The team to win first two matches will be the winner.The winner of a match is the one who wins the first THREE sets of his and the team which wins the first three games is the winner 
+			3. A game consists of 11 points. There must be a gap of at least two points between opponents. <br/>
+			4. If the score is 10-10, the game goes in to extra play until one of the players has gained a lead of 2 points. <br/>
+			5. The point goes to the player who successfully ends a rally. <br/>
+			6. The score of the server is always announced first. <br/>
+			7. Standard ITTF rules will be followed.<br/>
+			</p>
+		</div>
+		</div>
+
+	    <div class="slide" id="slide4">
+			<div class="intro" style="zoom:80%">
+			<h1 style="font-family:'hexter';color: black;font-weight:bold;font-size:45px;">Volley Ball</h1>
+			<p style="font-size:100%;color:#171716;font-size: 16px;background-repeat:repeat;background-size:cover;text-align:left;padding:15px;position:relative;font-family: 'Cafe';font-weight:bold;font-weight:strong;line-height:35px;">
+			1. Team Size: 12 players (6+6) (For both boys and girls) <br/>
+			2. Rotation will be followed in the game <br/>
+			3. 3 sets per match <br/>
+			4. Teams must have uniform jerseys with numbers on the back.<br/>
+			5. All standard FIVB rules will be followed.<br/>
+			6. In case of any dispute during the match, the decision of the referees will be considered final and binding. <br/>
+			7. Any disciplinary violation by any member of the team will lead to disqualification of the team.<br/><br/><br/><br/>
+
+			</p>
+		</div>
+		</div>
+		
+		<div class="slide" id="slide5">
+			<div class="intro" style="padding-top:5%;zoom:77%;margin-top:-70px" >
+			<h1 style="font-family:'hexter';color: black;font-weight:bold;font-size:45px;">Badminton</h1>
+			<p style="font-size:100%;font-size: 16px;color:#171716;background-repeat:repeat;background-size:cover;text-align:left;padding:15px;position:relative;font-family: 'Cafe';font-weight:bold;font-weight:strong;line-height:35px;">
+			1. Team Size: 5 players. (4 minimum)     Both girls and boys team.<br/>
+			2. All the matches will be played in the pattern of total 3 matches. A team will have to win at least 2 out of the 3 matches in order to win. <b>The matches will be played in the following order:</b>
+			a.	1st singles <br/>
+			b.	1st doubles <br/>
+			c.	2nd singles <br/>
+			3. Each of the 3 matches will be played as a set of 3 i.e. Each singles and each doubles will be played as a best of 3 match.<br/>
+			4. One player is allowed to play one singles and one doubles only. No player can play more than one singles or more than one doubles. <br/>
+			5. Matches will be of 21 points. Matches will be played with Yonex Nylon Shuttles. <br/>
+			6. A player will not be allowed to play unless he has Non-Marking Shoes. Matches will be played in indoor court.<br/>	
+			7. The latest general rules of Badminton World Federation shall be applied. <br/>
+			8. The decision given by the match official will be the final decision.<br/>
+
+			</p>
+		</div>
+		</div>
+		
+
+	</div>
+
+
+	
+	<!--<div class="section" id="section3">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Slide 1</h1>
+				<p>
+					 You just need to move your header and footer outside the plugin main wrap.
+					This way it won't move on scrolling. Take a look at the source code of this page.
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<h1>Slide 2</h1>
+			<img src="imgs/iphone-blue.png" alt="iphone" id="iphone-two" />
+		</div>
+	
+	</div>-->
+	
+	<div class="section" id="section4" style="padding:6% 0 0 0;">
+        <iframe src="gallery/index.html" style=" border: none; height:100% ; width: 100%;"></iframe>
+	</div>
+	
+	
+	<div class="section" id="section5">
+		<div class="intro">
+			<h1> Coming Soon</h1>
+          <!--  <div class="container">
+
+			
+
+
+                <section>
+
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button">More Info</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-overlay">
+                                    <span class="icon icon-close" style="position: fixed;margin-top: 0px;">Close the overlay</span>
+                                    <h2>About Parsley</h2>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div> -->
+		</div>
+	</div>
+	
+	<div class="section" id="section6">
+		
+			<iframe src="contact/index.html" style=" border: none; height: 86%; width: 85%;margin-top:10%;"></iframe>
+		
+            <div style="z-index: 102;position:absolute;bottom:0;right:0;" class="container2">
+                <section style="zoom:80%">
+
+                    <div class="morph-button morph-button-overlay morph-button-fixed">
+                        <button type="button">Map</button>
+                        <div class="morph-content" style="overflow:inherit">
+                            <div>
+                                <div class="content-style-overlay" >
+                                    <span class="icon icon-close" style="position: fixed;margin-top: 0px;">Close the overlay</span>
+									<span style="position:fixed;top:0;left:45%;color:white;"><h2 style="color:white;font-weight:bold;">MAP</h2></span>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m35!1m12!1m3!1d1613006.571339469!2d75.83059964658362!3d29.82423502317734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m20!1i0!3e0!4m5!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi!3m2!1d28.635308!2d77.22496!4m5!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!3m2!1d30.7333148!2d76.7794179!4m5!1s0x39057db24364e085%3A0x4f4fefd65caa0317!2sJaypee+University+of+Information+Technology%2C+JUIT-Waknaghat+Rd%2C+Waknaghat%2C+Himachal+Pradesh+173215!3m2!1d31.016129!2d77.070143!5e1!3m2!1sen!2sin!4v1414519208701" width="1080" height="600" frameborder="0" style="border:0"></iframe>
+                                    </div>
+                            </div>
+                        </div>
+                    </div><!-- morph-button -->
+                </section>
+
+            
+        </div>
+
+	    
+	
+	</div>
+	
+	
+</div>
+<div id="footer" ><p style="float:right;color:white;font-size:medium;margin-top:-7px">Designed and Developed by M&P </p></div>
+<script>
+    (function() {
+
+        function init() {
+            var speed = 250,
+                    easing = mina.easeinout;
+
+            [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+                var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                        pathConfig = {
+                            from : path.attr( 'd' ),
+                            to : el.getAttribute( 'data-path-hover' )
+                        };
+
+                el.addEventListener( 'mouseenter', function() {
+                    path.animate( { 'path' : pathConfig.to }, speed, easing );
+                } );
+
+                el.addEventListener( 'mouseleave', function() {
+                    path.animate( { 'path' : pathConfig.from }, speed, easing );
+                } );
+            } );
+        }
+
+        init();
+
+    })();
+</script>
+
+<script src="js/classie.js"></script>
+<script src="js/uiMorphingButton_fixed.js"></script>
+<script>
+    (function() {
+        var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+        // trick to prevent scrolling when opening/closing button
+        function noScrollFn() {
+            window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+        }
+
+        function noScroll() {
+            window.removeEventListener( 'scroll', scrollHandler );
+            window.addEventListener( 'scroll', noScrollFn );
+        }
+
+        function scrollFn() {
+            window.addEventListener( 'scroll', scrollHandler );
+        }
+
+        function canScroll() {
+            window.removeEventListener( 'scroll', noScrollFn );
+            scrollFn();
+        }
+
+        function scrollHandler() {
+            if( !didScroll ) {
+                didScroll = true;
+                setTimeout( function() { scrollPage(); }, 60 );
+            }
+        };
+
+        function scrollPage() {
+            scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+            didScroll = false;
+        };
+
+        scrollFn();
+
+        var el = document.querySelector( '.morph-button' );
+
+        new UIMorphingButton( el, {
+            closeEl : '.icon-close',
+            onBeforeOpen : function() {
+                // don't allow to scroll
+                noScroll();
+            },
+            onAfterOpen : function() {
+                // can scroll again
+                canScroll();
+                // add class "noscroll" to body
+                classie.addClass( document.body, 'noscroll' );
+                // add scroll class to main el
+                classie.addClass( el, 'scroll' );
+            },
+            onBeforeClose : function() {
+                // remove class "noscroll" to body
+                classie.removeClass( document.body, 'noscroll' );
+                // remove scroll class from main el
+                classie.removeClass( el, 'scroll' );
+                // don't allow to scroll
+                noScroll();
+            },
+            onAfterClose : function() {
+                // can scroll again
+                canScroll();
+            }
+        } );
+    })();
+</script>
+</body>
+</html>

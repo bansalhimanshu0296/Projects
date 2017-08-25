@@ -1,0 +1,10 @@
+<?php defined('PHPFOX') or exit('NO DICE!'); ?>
+<?php $aContent = '<ul><li><img src="http://jyc.club/social/theme/adminpanel/default/style/default/image/misc/draggable.png" alt="" /> <input type="hidden" name="order[1]" value="1" class="js_mp_order" /><a href="#?id=1" class="js_drop_down">Arts</a></li>
+<li><img src="http://jyc.club/social/theme/adminpanel/default/style/default/image/misc/draggable.png" alt="" /> <input type="hidden" name="order[2]" value="2" class="js_mp_order" /><a href="#?id=2" class="js_drop_down">Party</a></li>
+<li><img src="http://jyc.club/social/theme/adminpanel/default/style/default/image/misc/draggable.png" alt="" /> <input type="hidden" name="order[3]" value="3" class="js_mp_order" /><a href="#?id=3" class="js_drop_down">Comedy</a></li>
+<li><img src="http://jyc.club/social/theme/adminpanel/default/style/default/image/misc/draggable.png" alt="" /> <input type="hidden" name="order[4]" value="4" class="js_mp_order" /><a href="#?id=4" class="js_drop_down">Sports</a></li>
+<li><img src="http://jyc.club/social/theme/adminpanel/default/style/default/image/misc/draggable.png" alt="" /> <input type="hidden" name="order[5]" value="5" class="js_mp_order" /><a href="#?id=5" class="js_drop_down">Music</a></li>
+<li><img src="http://jyc.club/social/theme/adminpanel/default/style/default/image/misc/draggable.png" alt="" /> <input type="hidden" name="order[6]" value="6" class="js_mp_order" /><a href="#?id=6" class="js_drop_down">TV</a></li>
+<li><img src="http://jyc.club/social/theme/adminpanel/default/style/default/image/misc/draggable.png" alt="" /> <input type="hidden" name="order[7]" value="7" class="js_mp_order" /><a href="#?id=7" class="js_drop_down">Movies</a></li>
+<li><img src="http://jyc.club/social/theme/adminpanel/default/style/default/image/misc/draggable.png" alt="" /> <input type="hidden" name="order[8]" value="8" class="js_mp_order" /><a href="#?id=8" class="js_drop_down">Other</a></li>
+</ul>'; ?>

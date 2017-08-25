@@ -1,0 +1,184 @@
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
+	input[type="radio"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    -ms-appearance: checkbox;     /* not currently supported */
+    -o-appearance: checkbox;      /* not currently supported */
+	}
+	</style>
+	<title>Le Fiestus|Registration</title>
+	</head>
+<body>
+<a href="../index.html"><img src="logo.png"></a>
+<div id="wrapper">
+<form action="lefiestus.php" method="POST" class="login-form">
+<div class="header">
+	  <h1><b>Registration  Form</b></h1>
+	  </div>
+			<script>
+		function groupmember()
+{
+var mylist=document.getElementById("myList");
+var x=mylist.options[mylist.selectedIndex].text;
+last=0;
+for(i=1;i<=x;i++)
+{
+document.getElementById("u-"+i).style.display="block";
+last=i;
+}
+document.getElementById("wrapper1").style.visibility="visible";
+for(i=last+1;i<=15;i++)
+{
+document.getElementById("u-"+i).style.display="none";
+}
+document.getElementById("btn").style.visibility="visible";
+
+}	;
+ </script>
+ <div class="content">
+	<input type="text" name="collegename" class="input collegename" required="1" placeholder="College Name" ><br><br>
+	<select name='sports' size="1" class="input sportsname">
+	<option>Select Event</option>
+	<option  value='Mono Danza'>Mono Danza</option>
+	<option  value='Footloose'>Footloose</option>
+	<option  value='Exhiliration'>Exhiliration</option>
+	<option  value='Halla Bol'>Halla Bol</option>
+	<option  value='Flash P'>Flash P</option>
+	<option  value='Juit Idol'>Juit Idol</option>
+	<option  value='Mr. & Ms. lefiestus'>Mr. & Mrs. lefiutus</option>
+	<option  value='War Of Bands'>War of Bands</option>
+	<option  value='Aisles and Curtains'>Aisles & Curtains</option>
+	
+	</select><br><br>
+	<input type="text" class="input leadername" name="leadername" required="1" placeholder="Leader Name"><br><br>
+	
+	<input type="text" name="leadercn" class="input leadercn"required="1" placeholder="Leader Contact Number"><br><br>
+	<input type="text" name="leaderEI" class="input leaderEI"required="1" placeholder="Leader Email Id"><br><br>
+	<font style="font-family:arial">Payment Method<br>
+	<input type="radio" name="kM" value="online">Online
+	<input type="radio" name="kM" value="od" style="margin-left:9px">On Desk<br><br>
+	</font>
+		
+<select id="myList" onchange="groupmember()" class="input members">
+<option>Number of Members</option>
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  </select></div></div>
+  <style>table tr{display:none;}#sub{margin-left:0px;margin-top:-10px;display:block;}input{padding:5px;box-shadow:inset 0 1px 3px rgba(0,0,0,0.50);border-radius:0px}#sumb{background:grey;box-shadow:0 0 4px black;border:none;color:white;padding:8px;}#</style>
+			<div id="wrapper1" class="login-form1" style="visibility:hidden;">
+			<table id="as" style="font-size:10pt;font-face:arial">
+			<tbody>
+			<div class="content">
+			<tr id="u-1">
+			<td>Member 1:</td>
+			<td><input type="text" name="mem1" placeholder="Name" class="input1 mem1"></td>
+			<td><input type="text" name="mem1d" placeholder="D.O.B:mm-dd-yyyy" class="input1 mem1d"></td>
+			<td><input type="text" name="mem1e" placeholder="Enrollment Number" class="input1 mem1e"></td>
+			</tr>
+				<tr id="u-2">
+			<td>Member 2:</td>
+			<td><input type="text" name="mem2" placeholder="Name" class="input1 mem2"></td>
+			<td><input type="text" name="mem2d" placeholder="D.O.B:mm-dd-yyyy" class="input1 mem2d"></td>
+			<td><input type="text" name="mem2e" placeholder="Enrollment Number" class="input1 mem2e"></td>
+			</tr>
+				<tr id="u-3">
+			<td>Member 3:</td>
+			<td><input type="text" name="mem3" placeholder="Name" class="input1 mem3"></td>
+			<td><input type="text" name="mem3d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem3d"></td>
+			<td><input type="text" name="mem3e" placeholder="Enrollment Number"class="input1 mem3e"></td>
+			</tr>
+				<tr id="u-4">
+			<td>Member 4:</td>
+			<td><input type="text" name="mem4" placeholder="Name"class="input1 mem4"></td>
+			<td><input type="text" name="mem4d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem4d"></td>
+			<td><input type="text" name="mem4e" placeholder="Enrollment Number"class="input1 mem4e"></td>
+			</tr>
+			<tr id="u-5">
+			<td>Member 5:</td>
+			<td><input type="text" name="mem5" placeholder="Name"class="input1 mem5"></td>
+			<td><input type="text" name="mem5d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem5d"></td>
+			<td><input type="text" name="mem5e" placeholder="Enrollment Number"class="input1 mem5e"></td>
+			</tr>
+			<tr id="u-6">
+			<td>Member 6:</td>
+			<td><input type="text" name="mem6" placeholder="Name"class="input1 mem6"></td>
+			<td><input type="text" name="mem6d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem6d"></td>
+			<td><input type="text" name="mem6e" placeholder="Enrollment Number"class="input1 mem6e"></td>
+			</tr>
+			<tr id="u-7">
+			<td>Member 7:</td>
+			<td><input type="text" name="mem7" placeholder="Name"class="input1 mem7"></td>
+			<td><input type="text" name="mem7d" placeholder="D.O.B:mm-dd-yyyy" class="input1 mem7d"></td>
+			<td><input type="text" name="mem7e" placeholder="Enrollment Number"class="input1 mem7e"></td>
+			</tr>
+			<tr id="u-8">
+			<td>Member 8:</td>
+			<td><input type="text" name="mem8" placeholder="Name"class="input1 mem8"></td>
+			<td><input type="text" name="mem8d" placeholder="D.O.B:mm-dd-yyyy" class="input1 mem8d"></td>
+			<td><input type="text" name="mem8e" placeholder="Enrollment Number"class="input1 mem8e"></td>
+			</tr>
+			<tr id="u-9">
+			<td>Member 9:</td>
+			<td><input type="text" name="mem9" placeholder="Name"class="input1 mem9"></td>
+			<td><input type="text" name="mem9d" placeholder="D.OB.:mm-dd-yyyy"class="input1 mem9d"></td>
+			<td><input type="text" name="mem9e" placeholder="Enrollment Number"class="input1 mem9e"></td>
+			</tr>
+			<tr id="u-10">
+			<td>Member10:</td>
+			<td><input type="text" name="mem10" placeholder="Name"class="input1 mem10"></td>
+			<td><input type="text" name="mem10d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem10d"></td>
+			<td><input type="text" name="mem10e" placeholder="Enrollment Number"class="input1 mem10e"></td>
+			</tr>
+			<tr id="u-11">
+			<td>Member11:</td>
+			<td><input type="text" name="mem11" placeholder="Name"class="input1 mem11"></td>
+			<td><input type="text" name="mem11d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem11d"></td>
+			<td><input type="text" name="mem11e" placeholder="Enrollment Number"class="input1 mem11e"></td>
+			</tr>
+			<tr id="u-12">
+			<td>Member12:</td>
+			<td><input type="text" name="mem12" placeholder="Name"class="input1 mem12"></td>
+			<td><input type="text" name="mem12d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem12d"></td>
+			<td><input type="text" name="mem12e" placeholder="Enrollment Number"class="input1 mem12e"></td>
+			</tr>
+			<tr id="u-13">
+			<td>Member13:</td>
+			<td><input type="text" name="mem13" placeholder="Name"class="input1 mem13"></td>
+			<td><input type="text" name="mem13d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem13d"></td>
+			<td><input type="text" name="mem13e" placeholder="Enrollment Number"class="input1 mem13e"></td>
+			</tr>
+			<tr id="u-14">
+			<td>Member14:</td>
+			<td><input type="text" name="mem14" placeholder="Name"class="input1 mem14"></td>
+			<td><input type="text" name="mem14d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem14d"></td>
+			<td><input type="text" name="mem14e" placeholder="Enrollment Number"class="input1 mem14e"></td>
+			</tr>
+			<tr id="u-15">
+			<td>Member15:</td>
+			<td><input type="text" name="mem15" placeholder="Name"class="input1 mem15"></td>
+			<td><input type="text" name="mem15d" placeholder="D.O.B:mm-dd-yyyy"class="input1 mem15d"></td>
+			<td><input type="text" name="mem15e" placeholder="Enrollment Number"class="input1 mem15e"></td>
+			</tr>
+			
+			</tbody></table>
+			<input type="submit" value="Submit" id="btn" style="visibility:hidden;margin-left:70px;margin-top:10px">
+			</div>
+			
+</form>
+</body>

@@ -1,0 +1,2 @@
+[17-Sep-2015 21:18:06 Etc/GMT] PHP Fatal error:  Out of memory (allocated 524288) (tried to allocate 4190317161 bytes) in /home/juitpw8t/public_html/jyc.club/social/include/init.inc.php on line 47
+[17-Sep-2015 21:18:09 Etc/GMT] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 4190317161 bytes) in /home/juitpw8t/public_html/jyc.club/social/include/init.inc.php on line 47

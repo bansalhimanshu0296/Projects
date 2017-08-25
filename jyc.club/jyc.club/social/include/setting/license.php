@@ -1,0 +1,1 @@
+<?php define('MOXI9_PUBLIC_KEY', 'localhost'); define('MOXI9_PRIVATE_KEY', 'localhost'); ?>
